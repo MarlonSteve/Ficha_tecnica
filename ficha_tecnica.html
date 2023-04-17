@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificasiones tecnicas hardware y Software</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <script src="js/script.js"></script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"><b>FICHA TECNICA</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4"><center><b>Informacion general</b></center></td>
+                </tr>
+                <tr>
+                    <td rowspan="7"><center>Caracteristicas del producto</center></td>
+                    <td>Nombre:</td>
+                    <td colspan="2"><input type="text" id="nompro" placeholder="NOMBRE DEL PRODUCTO"></td>
+                </tr>
+                <tr>
+                    <td>Linea de produccion:</td>
+                    <td colspan="2"><input type="text" id="linpro" placeholder="LINEA DE PRODUCCIÓN" ></td>
+                </tr>
+                <tr>
+                    <td>Versiones anteriores:</td>
+                    <td colspan="2"><input type="text" id="verant" placeholder="VERSIONES ANTERIORES" ></td>
+                </tr>
+                <tr>
+                    <td>Version actual:</td>
+                    <td colspan="2"><input type="text" id="verson" placeholder="VERSION ACTUAL" ></td>
+                </tr>
+                <tr>
+                    <td>Modulo:</td>
+                    <td colspan="2"><input type="text" id="modu" placeholder="MODULO" ></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="4"><b>Descripcion del producto</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Descripcion general del producto:</td>
+                    <td colspan="4"><input type="text" id="desc" placeholder="DESCRICION DEL PRODUCTO" ></td>
+                </tr>
+                <tr>
+                    <td>Objetivos especificos:</td>
+                    <td colspan="4"><input type="text" id="ob" placeholder="OBJETIVO ESPECIFICOS" ></td>
+                </tr>
+                <tr>
+                    <td><center>Arquitectura</center></td>
+                    <td colspan="4"><input type="text" id="ge" placeholder="ARQUITECTURA" ></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="5"><b>Requerimientos</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Requerimientos funcionales generales</td>
+                    <td colspan="4"><input type="text" id="re" placeholder="REQUERIMIENTOS FUNCIONALES GENERALES" ></td>
+                </tr>
+                <tr>
+                    <td>Clientes del producto</td>
+                    <td colspan="4"><input type="text" id="cli" placeholder="CLIENTES DEL PRODUCTO" ></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="4"><b>Requerimientos del producto</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Requisitos del sistema (servidor)</td>
+                    <td>Hardware</td>
+                    <td colspan="2"><input type="text" id="har" placeholder="HARDWARE" ></td>
+                </tr>
+                <tr>
+                    <td>Software</td>
+                    <td colspan="2"><input type="text" id="sof" placeholder="SOFTWARE" ></td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td colspan="2"><input type="text" id="ot" placeholder="OTROS" ></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Requisitos del sistema (cliente)</td>
+                    <td>Hardware</td>
+                    <td colspan="2"><input type="text" id="ree" placeholder="HARDWARE"> </td>
+                </tr>
+                <tr>
+                    <td>Software</td>
+                    <td colspan="2"><input type="text" id="ft" placeholder="SOFTWARE" ></td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td colspan="2"><input type="text" id="ros" placeholder="OTROS" ></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="4">Historial De Modificaciones</th>
+                </tr>
+                <tr>
+                    <th>Version</th>
+                    <th>Naturaleza<br> de cambios</th>
+                    <th>Fecha de <br>Aprobacion</th>
+                    <th>Fecha<br> Validacion</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="VERSION" id="fecha"></td>
+                    <td><input type="text" placeholder="NATURALEZA DE CAMBIOS" id="de"></td>
+                    <td><input type="text" placeholder="FECHA DE APROBACION" id="los"></td>
+                    <td><input type="text" placeholder="FECHA VALIDACION" id="tr"></td>
+                </tr>
+                <tr>
+                    <th colspan="4">FIRMAS</th>
+        
+                </tr>
+                <tr>
+                    <th>ELABORÓ</th>
+                    <th>APROBÓ</th>
+                    <th colspan="2">VALIDÓ</th>
+                </tr>
+                <tr>
+                    <th><textarea placeholder="ELABORÓ"  name="" id="ela" cols="" rows="5"></textarea></th>
+                    <th><textarea placeholder="APROBÓ" name="" id="apro" cols="" rows="5"></textarea></th>
+                    <th colspan="2"><textarea placeholder="VALIDÓ" name="" id="vali" cols="" rows="5"></textarea></th>
+                </tr>
+                <tr>
+                    <th>FECHA<input type="date" id="lu"></th>
+                    <th>FECHA<input type="date" id="mi" placeholder="Fecha"></th>
+                    <th colspan="2">FECHA<input type="date" id="mi" placeholder="Fecha2"></th>
+                </tr>
+                <tr>
+                    <td colspan="4"><button onclick="ficha()">ENVIAR</button></td>
+                </tr>
+            </table>
+            <p id="respuesta"></p>
+            <p id="respuesta2"></p>
+            <p id="respuesta3"></p>
+            <p id="respuesta4"></p>
+            <p id="respuesta5"></p>
+            <p id="respuesta6"></p>
+            <p id="respuesta7"></p>
+            <p id="respuesta8"></p>
+            <p id="respuesta9"></p>
+            <p id="respuesta10"></p>
+            <p id="respuesta11"></p>
+            <p id="respuesta12"></p>
+            <p id="respuesta13"></p>
+            <p id="respuesta14"></p>
+            <p id="respuesta15"></p>
+            <p id="respuesta16"></p>
+            <p id="respuesta17"></p>
+            <p id="respuesta18"></p>
+            <p id="respuesta19"></p>
+            <p id="respuesta20"></p>
+            <p id="respuesta21"></p>
+            <p id="respuesta22"></p>
+            <p id="respuesta23"></p>
+            <p id="respuesta24"></p>
+            <p id="respuesta25"></p>
+            <p id="respuesta26"></p>
+            </tr>
+        </table>
+</head>
+    </html>
