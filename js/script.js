@@ -1,6 +1,6 @@
 alert("Especificaciones hardware y software")
 function ficha() {
-    let nompro, linpro, verant
+    let nompro, linpro, verant, verson, modu, desc, ob, ge, re, cli, har, sof, ot, ree, ft, ros, fecha, de, los, tr, ela, apro, vali, lu, mar, mi
 
     nompro=document.getElementById("nompro").value
     document.getElementById("respuesta").innerHTML="<h2>Nombre Del Producto: "+nompro+"</h2>"
