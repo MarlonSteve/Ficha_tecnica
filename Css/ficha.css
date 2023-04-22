@@ -1,0 +1,12 @@
+function ficha () {
+    let nompro, linpro, verant
+
+    nompro=document.getElementById("nompro").value
+    document.getElementById("respuesta").innerHTML="<h2>Nombre Del Producto: "+nompro+"</h2>"
+    
+    linpro=document.getElementById("linpro").value
+    document.getElementById("respuesta2").innerHTML="<h2>Linea De Producción: "+linpro+"</h2>"
+   
+    verant=document.getElementById("verant").value
+    document.getElementById("respuesta3").innerHTML="<h2>Versiones Anteriores: "+verant+"</h2>"
+}
